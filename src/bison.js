@@ -50,7 +50,7 @@ async function runPredict(inputMessage) {
     });
 
     if (!result[0]?.candidates[0]?.content) {
-      throw error;
+      throw new error();
     }
     const generatedContent = result[0].candidates[0].content;
 
@@ -69,7 +69,7 @@ async function runPredict(inputMessage) {
 
     return { generatedContent, modifiedContent };
   } catch (error) {
-    throw error;
+    throw new error();
   }
 }
 

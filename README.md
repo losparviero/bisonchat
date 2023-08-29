@@ -1,6 +1,6 @@
 # Bison Telegram Bot
 
-Use Google's Vertex AI PaLM (chat-bison-001) model in Telegram!
+Char with Google's PaLM AI (chat-bison-001) in Telegram!
 
 ### Install
 
@@ -13,8 +13,13 @@ Use Google's Vertex AI PaLM (chat-bison-001) model in Telegram!
 
 ### Mechanism
 
-Uses the Vertex AI through Google Cloud API which incurs charges.
+Uses the MakerSuite API which is promotional, rate-limited and not meant for production use.
 
+### Limitations
+
+No chat context or message history. Each new message is effectively it's own conversation thread so conversation history is not maintained.
+
+IF someone is willing to contribute and add that, please feel free to open a PR.
 ### License
 
 AGPL-3.0 ©️ Zubin

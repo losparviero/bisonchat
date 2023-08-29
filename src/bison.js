@@ -50,7 +50,7 @@ async function runPredict(inputMessage) {
     });
 
     if (!result[0]?.candidates[0]?.content) {
-      throw new error("No predicted response.");
+      throw new Error("No predicted response.");
     }
     const generatedContent = result[0].candidates[0].content;
 

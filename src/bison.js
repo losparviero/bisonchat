@@ -49,7 +49,11 @@ async function runPredict(inputMessage) {
       },
     });
 
+    if (!result[0]?.candidates[0]?.content) {
+      throw error;
+    }
     const generatedContent = result[0].candidates[0].content;
+
     let modifiedContent;
     const citationSources =
       result[0]?.candidates[0]?.citationMetadata?.citationSources ?? [];

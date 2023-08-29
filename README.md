@@ -17,9 +17,9 @@ Uses the MakerSuite API which is promotional, rate-limited and not meant for pro
 
 ### Limitations
 
-No chat context or message history. Each new message is effectively it's own conversation thread so conversation history is not maintained.
+No chat context or message history. Each new message is effectively its own conversation thread so conversation history is not maintained.
 
-IF someone is willing to contribute and add that, please feel free to open a PR.
+If someone is willing to contribute and add that, please feel free to open a PR.
 ### License
 
 AGPL-3.0 ©️ Zubin
